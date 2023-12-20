@@ -25,7 +25,7 @@ const mongoose = require('mongoose');
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb+srv://admin:admin@cluster0.k6cuynu.mongodb.net/?retryWrites=true&w=majority');
+  await mongoose.connect('mongodb+srv://admin:<password>@cluster0.k6cuynu.mongodb.net/');
   //mongodb+srv://admin:<password>@cluster0.k6cuynu.mongodb.net/
   // my mongo
 }
