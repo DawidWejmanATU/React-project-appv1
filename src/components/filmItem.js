@@ -33,4 +33,4 @@ function FilmItem(props){
 }
 
 
-export default filmsItem;
+export default FilmItem;
