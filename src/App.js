@@ -21,13 +21,13 @@ function App() {
           <Nav className="me-auto">
             <Nav.Link href="/">Home</Nav.Link>
             <Nav.Link href="/create">Create</Nav.Link>
-            <Nav.Link href="/read">Read</Nav.Link>
+            <Nav.Link href="/reading">Read</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
       <Routes>
         <Route path='/' element={<Content></Content>}></Route>
-        <Route path='/read' element={<Read></Read>}></Route>
+        <Route path='/reading' element={<Read></Read>}></Route>
         <Route path='/create' element={<Create></Create>}></Route>
         <Route path='/edit/:id' element={<Edit></Edit>}></Route>
       </Routes>
