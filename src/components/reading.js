@@ -10,7 +10,7 @@ function Reading(){
         ()=>{
             axios.get('http://localhost:4000/api/films')
             .then(
-                (Response)=>{
+                (response)=>{
                     setData(response.data)
                 }
             )

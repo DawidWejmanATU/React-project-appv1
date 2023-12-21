@@ -82,6 +82,9 @@ app.get('/api/films/:identifier',async (req,res)=>{
   res.send(film);
 })
 
+app.get('*', (req,res) =>{
+  res.sendFile(path.join(__dirname+'/../build/index.html'));
+  });//sending to the file 
 
 
 app.listen(port, () => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           

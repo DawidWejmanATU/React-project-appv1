@@ -1,9 +1,9 @@
-import FilmItem from "./filmItem";
+import FilmsItems from "./filmItem";
 
-function FileSystem(props)
+function Films(props)
 {
 return props.MyFilms.map(
-    (Films)=>{
+    (films)=>{
         return <FilmsItems MyFilms={Films} key={Films._id} reload={()=>{props.reload();}}></FilmsItems>
     }
 );
