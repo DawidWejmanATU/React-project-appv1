@@ -2,9 +2,9 @@ import FilmsItems from "./filmItem";
 
 function Films(props)
 {
-return props.MyFilms.map(
+return props.MyFilm.map(
     (films)=>{
-        return <FilmsItems MyFilms={Films} key={Films._id} reload={()=>{props.reload();}}></FilmsItems>
+        return <FilmsItems MyFilm={films} key={films._id} reload={()=>{props.Reload();}}></FilmsItems>
     }
 );
 

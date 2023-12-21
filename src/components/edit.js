@@ -39,7 +39,7 @@ export default function Edit(props)
         axios.put('http://localhost:4000/api/Films/' + id, newFilm)
         .then((res)=>{
             console.log(res.data);
-            navigate('/read');
+            navigate('/reading');
         });
     }
 

@@ -1,7 +1,8 @@
-const express =require('express')
+const express = require('express')
 const app = express()
 const port = 4000
 const cors = require('cors');
+
 
 app.use(cors());
 app.use(function(req, res, next) {
@@ -10,7 +11,7 @@ res.header("Access-Control-Allow-Methods", "GET, POST, PUT, DELETE, OPTIONS");
 res.header("Access-Control-Allow-Headers",
 "Origin, X-Requested-With, Content-Type, Accept");
 next();
-});//use function
+});
 
 const bodyParser = require("body-parser");
 
@@ -82,11 +83,6 @@ app.get('/api/films/:identifier',async (req,res)=>{
   res.send(film);
 })
 
-app.get('*', (req,res) =>{
-  res.sendFile(path.join(__dirname+'/../build/index.html'));
-  });//sending to the file 
-
-
-app.listen(port, () => {                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           
+app.listen(port, () => {
   console.log(`Example app listening on port ${port}`)
 })

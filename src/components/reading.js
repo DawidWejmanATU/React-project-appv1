@@ -8,6 +8,7 @@ function Reading(){
 
     useEffect(
         ()=>{
+            
             axios.get('http://localhost:4000/api/films')
             .then(
                 (response)=>{
@@ -19,8 +20,9 @@ function Reading(){
                     console.log(error);
                 }
             )
+    
         }, []
-    );
+      );
 
         const ReloadData = (e)=>{
             axios.get('http://localhost:4000/api/films')

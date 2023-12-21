@@ -30,7 +30,7 @@ const handleSubmit = (e)=>{
 return (
     <div>
         <h2>Welcome!!! components</h2>
-        <from>onsubmit={handleSubmit}
+        <from onsubmit={handleSubmit}>
         <div className="form-group">
             <label>Add film title: </label>
             <input type="text"
