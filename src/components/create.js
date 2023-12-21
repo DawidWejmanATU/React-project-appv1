@@ -1,10 +1,9 @@
 import { useState } from "react";
 import axios from "axios";
 
-function Create()
-{
+function Create() {
     const [filmTitle, setfilmTitle] = useState('');
-    cosnt [poster, setposter] =useState('');
+    const [poster, setposter] =useState('');
     const [director, setDirector] = useState('');
 
 
@@ -17,13 +16,13 @@ const handleSubmit = (e)=>{
     "poster: " +poster+
     "director: " +director);
 
-    const films = {
+    const film = {
         filmTitle:filmTitle,
         poster:poster,
         director:director
     };
 
-    axios.post('http://localhost:4000/api/films', films)
+    axios.post('http://localhost:4000/api/film',film)
     .then()
     .catch();
 }

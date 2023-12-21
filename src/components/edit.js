@@ -8,7 +8,7 @@ export default function Edit(props)
     let { id } = useParams();
 
     const [filmTitle, setfilmTitle] = useState('');
-    cosnt [poster, setposter] =useState('');
+    const [poster, setposter] =useState('');
     const [director, setDirector] = useState('');
 
     const navigate = useNavigate();
@@ -50,7 +50,7 @@ export default function Edit(props)
         <label>Add Film title:  </label>
         <input type="text"
         className="form-control"
-        value={title}
+        value={filmTitle}
         onChange={(e) => setfilmTitle(e.target.value)}
         />
         </div>
@@ -58,7 +58,7 @@ export default function Edit(props)
         <label>Add release date: </label>
         <input type="text"
         className="form-control"
-        value={cover}
+        value={poster}
         onChange={(e) => setposter(e.target.value)}
         />
         </div>
@@ -66,7 +66,7 @@ export default function Edit(props)
         <label>Add name director: </label>
         <input type="text"
         className="form-control"
-        value={author}
+        value={director}
         onChange={(e) => setDirector(e.target.value)}
         />
         </div>
