@@ -21,14 +21,14 @@ function FilmItem(props){
                             (e)=>{
                                 axios.delete('http://localhost:4000/api/films' +props.MyFilm._id)
                                 .then((res)=>{
-                                    let reload = props.reload();
+                                     props.reload();
                                 })
                                 .catch()
                             }
                         }>Delete</Button>
             </Card>
         </div>
-    )
+    );
 }
 
 
